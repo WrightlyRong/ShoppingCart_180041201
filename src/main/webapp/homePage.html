@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+<h1>Welcome!</h1>
+<form action="LoginSuccessfulServlet" method="post">
+    <p>Choose items to add to Cart:</p>
+    <div>
+        <input type="checkbox" id="table" name="item[0]">
+        <label for="table">Table</label>
+    </div>
+    <div>
+        <input type="checkbox" id="chair" name="item[1]">
+        <label for="chair">Chair</label>
+    </div>
+    <div>
+        <input type="checkbox" id="lamp" name="item[2]">
+        <label for="lamp">Lamp</label>
+    </div>
+    <div>
+        <input type="checkbox" id="bed" name="item[3]">
+        <label for="bed">Bed</label>
+    </div>
+
+    <div>
+        <button type="submit">View Cart</button>
+    </div>
+</form>
+<br>
+<form method = "post" action="LogoutServlet">
+    <input type="submit" value = "Log Out">
+</form>
+</body>
+</html>
